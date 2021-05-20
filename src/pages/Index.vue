@@ -1,6 +1,17 @@
 <template>
   <q-page class="flex flex-center">
   <meta name="viewport" content="user-scalable = yes">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159323134-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-159323134-2');
+  </script>
+  <script data-ad-client="ca-pub-5879376732987660" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   
   <!-- HTML Meta Tags -->
   <title>bvooxyz</title>
