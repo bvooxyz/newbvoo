@@ -13,20 +13,34 @@ a {
 }
 
 a:hover {
-    color: #718792;
+    color: white;
     text-decoration: none;
+}
+
+.text-h3 {
+    color: white;
+    font-size: 4rem;
+    line-height: 1em;
 }
 
 .text-h4 {
     color: #455a64;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 3.5em;
+    font-size: 3.5rem;
     line-height: 1em;
+}
+
+.text-h4:hover {
+    color: white;
+}
+
+.text-caption {
+    color: grey;
 }
 
 #mainheader {
     font-family: 'Space Mono', monospace;
-    font-size: 8em;
+    font-size: 8rem;
     color: white;
     padding-top: 0.30em;
     padding-left: 1%;

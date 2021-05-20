@@ -1,7 +1,7 @@
 <template>
   <div class="fullscreen bg-primary text-white text-center q-pa-md flex flex-center">
     <div>
-      <div style="font-size: 30vh">
+      <div style="font-size: 20vh">
         Uh-oh.
       </div>
 

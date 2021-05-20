@@ -1,5 +1,6 @@
 <template>
   <q-page class="flex flex-center">
+  <meta name="viewport" content="user-scalable = yes">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
@@ -9,13 +10,13 @@
       </div>
       <div class="itemlist column wrap">
         <div class="text-h4">
-        <q-item clickable @click="$router.replace('/Projects')">Projects</q-item>
+          <q-item clickable @click="$router.replace('/Projects')">Projects</q-item>
         </div>
         <div class="text-h4">
-        <q-item clickable @click="$router.replace('/ROMs')">ROMs</q-item>
+          <q-item clickable @click="$router.replace('/ROMs')">ROMs</q-item>
         </div>
         <div class="text-h4">
-        <q-item clickable @click="$router.replace('/awa')">awa</q-item>
+          <q-item clickable @click="$router.replace('/awa')">awa</q-item>
         </div>
       </div>
     </div>
