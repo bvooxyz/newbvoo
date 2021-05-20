@@ -1,6 +1,26 @@
 <template>
   <q-page class="flex flex-center">
   <meta name="viewport" content="user-scalable = yes">
+  
+  <!-- HTML Meta Tags -->
+  <title>bvooxyz</title>
+  <meta name="description" content="HFTF ROMs and JSONS">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://bvoo.xyz/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="bvooxyz">
+  <meta property="og:description" content="HFTF ROMs and JSONS">
+  <meta property="og:image" content="icons/favicon-512x512.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="bvoo.xyz">
+  <meta property="twitter:url" content="https://bvoo.xyz/">
+  <meta name="twitter:title" content="bvooxyz">
+  <meta name="twitter:description" content="HFTF ROMs and JSONS">
+  <meta name="twitter:image" content="icons/favicon-512x512.png">
+      
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
