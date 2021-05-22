@@ -1,15 +1,7 @@
 <template>
   <q-page class="flex flex-center">
     <div class="fit row wrap justify-start">
-      <typer
-        text="bvoo.xyz"
-        size="8rem"
-        delay="1000"
-        speed="150"
-        color="white"
-        cursorDisappear="100"
-        class="moz://a-5"
-      />
+      <typer text="bvoo.xyz" size="8rem" delay="1000" speed="150" color="white" cursorDisappear="100" class="moz://a-5" />
       <div class="itemlist flex-col wrap">
         <router-link to="/Projects">
           <typer
@@ -50,15 +42,14 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
-import Typer from "../components/Typer.vue";
+import Typer from '../components/Typer.vue';
 
-export default defineComponent({
-  name: "PageIndex",
+export default {
+  name: 'PageIndex',
   components: {
     Typer,
   },
-});
+};
 </script>
 
 <style>

@@ -1,10 +1,10 @@
 // app global css in SCSS form
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 * {
-  font-family: "JetBrains Mono", monospace;
+  font-family: 'JetBrains Mono', monospace;
 }
 html {
   background-color: #212121;
@@ -28,7 +28,7 @@ a:hover {
 
 .text-h4 {
   color: #455a64;
-  font-family: "JetBrains Mono", monospace;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 3.5rem;
   line-height: 1em;
 }
@@ -42,7 +42,7 @@ a:hover {
 }
 
 #mainheader {
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 8rem;
   color: white;
   padding-top: 0.3em;
@@ -50,7 +50,7 @@ a:hover {
 }
 
 #altheader {
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 8rem;
   color: white;
   padding-left: 1%;
@@ -58,7 +58,7 @@ a:hover {
 }
 
 .pog-header {
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 8rem;
   color: white;
   padding-left: 1%;

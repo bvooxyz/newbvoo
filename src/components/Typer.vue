@@ -3,14 +3,7 @@
     <div :style="`color: ${color}; font-size: ${size}; font-family: ${font}`">
       {{ content }}
     </div>
-    <div
-      :style="`color: ${
-        showCursor ? color : 'transparent'
-      }; font-size: ${size}; font-family: ${font}`"
-      class="blinky"
-    >
-      |
-    </div>
+    <div :style="`color: ${showCursor ? color : 'transparent'}; font-size: ${size}; font-family: ${font}`" class="blinky">|</div>
   </div>
 </template>
 
@@ -19,7 +12,7 @@ export default {
   props: {
     text: {
       type: String,
-      default: "pog",
+      default: 'pog',
       required: true,
     },
     speed: {
@@ -34,12 +27,12 @@ export default {
     },
     size: {
       type: String,
-      default: "8em",
+      default: '8em',
       required: false,
     },
     color: {
       type: String,
-      default: "inherit",
+      default: 'inherit',
       required: false,
     },
     font: {
@@ -60,12 +53,12 @@ export default {
   },
   data() {
     return {
-      content: "",
+      content: '',
       showCursor: false,
     };
   },
   mounted() {
-    let letters = this.text.split("");
+    let letters = this.text.split('');
 
     letters = letters.reverse();
 
@@ -74,7 +67,7 @@ export default {
 
       const interval = setInterval(() => {
         if (letters.length > 0) {
-          this.content = this.content + letters.pop();
+          this.content += letters.pop();
         } else {
           clearInterval(interval);
           if (this.cursorDisappear > 0) {

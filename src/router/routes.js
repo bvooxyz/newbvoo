@@ -1,30 +1,38 @@
+import BackHome from '../layouts/BackHome.vue';
+import NotReady from '../pages/NotReady.vue';
+// import Projects from '../pages/Projects.vue';
+import Index from '../pages/Index.vue';
+import MainLayout from '../layouts/MainLayout.vue';
+import ROMs from '../pages/ROMs.vue';
+import Error404 from '../pages/Error404.vue';
+
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/Index.vue') }],
+    component: () => MainLayout,
+    children: [{ path: '', component: () => Index }],
   },
   {
     path: '/Projects',
-    component: () => import('layouts/BackHome.vue'),
-    children: [{ path: '', component: () => import('pages/NotReady.vue') }],
+    component: () => BackHome,
+    children: [{ path: '', component: () => NotReady }],
   },
   {
     path: '/ROMs',
-    component: () => import('layouts/BackHome.vue'),
-    children: [{ path: '', component: () => import('pages/ROMs.vue') }],
+    component: () => BackHome,
+    children: [{ path: '', component: () => ROMs }],
   },
   {
     path: '/awa',
-    component: () => import('layouts/BackHome.vue'),
-    children: [{ path: '', component: () => import('pages/NotReady.vue') }],
+    component: () => BackHome,
+    children: [{ path: '', component: () => NotReady }],
   },
 
   // Always leave this as last one,
   // but you can also remove it
   {
     path: '/:catchAll(.*)*',
-    component: () => import('pages/Error404.vue'),
+    component: () => Error404,
   },
 ];
 

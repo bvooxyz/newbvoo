@@ -2,46 +2,16 @@
   <q-layout view="lHh Lpr lFf">
     <q-header>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-        <q-btn 
-            dense
-            flat
-            label="Back Home"
-            icon="arrow_back"
-            aria-label="Back"
-            to="/"
-            id="backBtn"
-        />
+        <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
+        <q-btn dense flat label="Back Home" icon="arrow_back" aria-label="Back" to="/" id="backBtn" />
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      class="bg-secondary"
-      behavior="mobile"
-    >
+    <q-drawer v-model="leftDrawerOpen" show-if-above class="bg-secondary" behavior="mobile">
       <q-list>
-        <q-item-label
-          header
-          class="text-grey-1"
-        >
-          My Stuff
-        </q-item-label>
+        <q-item-label header class="text-grey-1"> My Stuff </q-item-label>
 
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-          class="text-grey-1"
-        />
+        <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" class="text-grey-1" />
       </q-list>
     </q-drawer>
 
@@ -52,55 +22,52 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+import EssentialLink from '../components/EssentialLink.vue';
 
-import EssentialLink from 'components/EssentialLink.vue'
-
-const linksList = [
-  {
-    title: 'Twitter',
-    caption: 'twitter.com/bvoo',
-    icon: 'fab fa-twitter',
-    link: 'https://twitter.com/bvoo'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/bvoo',
-    icon: 'code',
-    link: 'https://github.com/bvoo'
-  },
-  {
-    title: 'Discord',
-    caption: 'discord.gg/kyBjEY6',
-    icon: 'chat',
-    link: 'https://discord.gg/kyBjEY6'
-  },
-  {
-    title: 'Patreon',
-    caption: 'patreon.com/bvoo',
-    icon: 'fab fa-patreon',
-    link: 'https://www.patreon.com/bvoo'
-  }
-];
-
-import { defineComponent, ref } from 'vue'
-
-export default defineComponent({
+export default {
   name: 'BackHome',
 
   components: {
-    EssentialLink
+    EssentialLink,
   },
 
-  setup () {
-    const leftDrawerOpen = ref(false)
+  setup() {
+    const leftDrawerOpen = ref(false);
+    const essentialLinks = [
+      {
+        title: 'Twitter',
+        caption: 'twitter.com/bvoo',
+        icon: 'fab fa-twitter',
+        link: 'https://twitter.com/bvoo',
+      },
+      {
+        title: 'Github',
+        caption: 'github.com/bvoo',
+        icon: 'code',
+        link: 'https://github.com/bvoo',
+      },
+      {
+        title: 'Discord',
+        caption: 'discord.gg/kyBjEY6',
+        icon: 'chat',
+        link: 'https://discord.gg/kyBjEY6',
+      },
+      {
+        title: 'Patreon',
+        caption: 'patreon.com/bvoo',
+        icon: 'fab fa-patreon',
+        link: 'https://www.patreon.com/bvoo',
+      },
+    ];
 
     return {
-      essentialLinks: linksList,
+      essentialLinks,
       leftDrawerOpen,
-      toggleLeftDrawer () {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      }
-    }
-  }
-})
+      toggleLeftDrawer() {
+        leftDrawerOpen.value = !leftDrawerOpen.value;
+      },
+    };
+  },
+};
 </script>
