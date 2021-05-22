@@ -22,6 +22,7 @@
 </template>
 
 <script>
+/* eslint-disable import/no-unresolved, import/no-extraneous-dependencies */
 import { ref } from 'vue';
 import EssentialLink from '../components/EssentialLink.vue';
 

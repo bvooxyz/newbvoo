@@ -1,38 +1,31 @@
-import BackHome from '../layouts/BackHome.vue';
-import NotReady from '../pages/NotReady.vue';
-// import Projects from '../pages/Projects.vue';
-import Index from '../pages/Index.vue';
-import MainLayout from '../layouts/MainLayout.vue';
-import ROMs from '../pages/ROMs.vue';
-import Error404 from '../pages/Error404.vue';
-
+/* eslint-disable import/no-unresolved */
 const routes = [
   {
     path: '/',
-    component: () => MainLayout,
-    children: [{ path: '', component: () => Index }],
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/Index.vue') }],
   },
   {
     path: '/Projects',
-    component: () => BackHome,
-    children: [{ path: '', component: () => NotReady }],
+    component: () => import('layouts/BackHome.vue'),
+    children: [{ path: '', component: () => import('pages/NotReady.vue') }],
   },
   {
     path: '/ROMs',
-    component: () => BackHome,
-    children: [{ path: '', component: () => ROMs }],
+    component: () => import('layouts/BackHome.vue'),
+    children: [{ path: '', component: () => import('pages/ROMs.vue') }],
   },
   {
     path: '/awa',
-    component: () => BackHome,
-    children: [{ path: '', component: () => NotReady }],
+    component: () => import('layouts/BackHome.vue'),
+    children: [{ path: '', component: () => import('pages/NotReady.vue') }],
   },
 
   // Always leave this as last one,
   // but you can also remove it
   {
     path: '/:catchAll(.*)*',
-    component: () => Error404,
+    component: () => import('pages/Error404.vue'),
   },
 ];
 
