@@ -50,9 +50,9 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksList = [
   {
     title: 'Twitter',
-    caption: 'twitter.com/bvoo',
+    caption: 'twitter.com/bvoowo',
     icon: 'fab fa-twitter',
-    link: 'https://twitter.com/bvoo'
+    link: 'https://twitter.com/bvoowo'
   },
   {
     title: 'Github',
