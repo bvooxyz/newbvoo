@@ -57,3 +57,31 @@ a:hover {
 #pageheader {
     color: white;
 }
+
+.typing-main {
+    width: 8.15ch;
+    animation: typing 2.5s steps(20), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .typing-list {
+    width: 9ch;
+    animation: typing 3.3s steps(8), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
