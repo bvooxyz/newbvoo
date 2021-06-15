@@ -20,6 +20,11 @@ const routes = [
     component: () => import('layouts/BackHome.vue'),
     children: [{ path: '', component: () => import('pages/NotReady.vue') }],
   },
+  {
+    path: '/pogfish',
+    component: () => import('layouts/BackHome.vue'),
+    children: [{ path: '', component: () => import('pages/Pogfish.vue') }],
+  },
 
   // Always leave this as last one,
   // but you can also remove it
