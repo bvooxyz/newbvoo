@@ -5532,8 +5532,8 @@ var entry, js, css2;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-b078c8bd.js";
-    js = ["pages/__layout.svelte-b078c8bd.js", "chunks/vendor-1c43a481.js"];
+    entry = "pages/__layout.svelte-d59ea64c.js";
+    js = ["pages/__layout.svelte-d59ea64c.js", "chunks/vendor-1c43a481.js"];
     css2 = ["assets/pages/__layout.svelte-12ccf959.css"];
   }
 });
@@ -5591,8 +5591,8 @@ var entry2, js2, css4;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "pages/__error.svelte-ef86518e.js";
-    js2 = ["pages/__error.svelte-ef86518e.js", "chunks/vendor-1c43a481.js"];
+    entry2 = "pages/__error.svelte-60046cd5.js";
+    js2 = ["pages/__error.svelte-60046cd5.js", "chunks/vendor-1c43a481.js"];
     css4 = ["assets/pages/__error.svelte-46e68dce.css"];
   }
 });
@@ -5631,8 +5631,8 @@ var entry3, js3, css5;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-1094a691.js";
-    js3 = ["pages/index.svelte-1094a691.js", "chunks/vendor-1c43a481.js"];
+    entry3 = "pages/index.svelte-2c80b196.js";
+    js3 = ["pages/index.svelte-2c80b196.js", "chunks/vendor-1c43a481.js"];
     css5 = [];
   }
 });
@@ -5651,8 +5651,8 @@ var init_index_svelte2 = __esm({
 <div class="${"flex flex-row nowrap justify-center align-middle text-center"}"><div class="${"flex flex-col justify-between"}"><h1 class="${"font-serif text-8xl font-bold tracking-wider pb-16"}">ROMs</h1>
     <div class="${"h-2"}"></div>
     <div class="${"pt-4 text-4xl flex flex-col gap-5"}"><span class="${"font-mono text-secondary"}"><a href="${"https://newchallenger.net/fc2/fc2roms.zip"}">FC2 JSONs</a></span>
-      <span class="${"font-mono text-secondary"}"><a href="${"https://drive.google.com/uc?export=download&id=1KNzlMznYli9wlM6qhYXEvD2uQHJ6PtDE"}">jojoba</a></span>
-      <span class="${"font-mono text-secondary"}"><a href="${"https://drive.google.com/uc?export=download&id=1DbnTTWDMFzGPEpa7v9UcU41PxQ3FwfQx"}">jojobanr1</a></span>
+      <span class="${"font-mono text-secondary"}"><a href="${"https://cdn.krypton.sh/jojoba.zip?id=jojoba"}">jojoba</a></span>
+      <span class="${"font-mono text-secondary"}"><a href="${"https://cdn.krypton.sh/jojobanr1.zip?id=jojobanr1"}">jojobanr1</a></span>
       <div class="${"h-[2em]"}"></div>
       <span class="${"font-mono text-secondary text-2xl"}"><a href="${"https://krypton.sh/"}">Coming Soon</a></span></div></div></div>`;
     });
@@ -5671,8 +5671,8 @@ var entry4, js4, css6;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_index_svelte2();
-    entry4 = "pages/roms/index.svelte-b77f9c01.js";
-    js4 = ["pages/roms/index.svelte-b77f9c01.js", "chunks/vendor-1c43a481.js"];
+    entry4 = "pages/roms/index.svelte-64b085d0.js";
+    js4 = ["pages/roms/index.svelte-64b085d0.js", "chunks/vendor-1c43a481.js"];
     css6 = [];
   }
 });
@@ -5710,8 +5710,8 @@ var entry5, js5, css7;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_index_svelte3();
-    entry5 = "pages/soon/index.svelte-36e6988b.js";
-    js5 = ["pages/soon/index.svelte-36e6988b.js", "chunks/vendor-1c43a481.js"];
+    entry5 = "pages/soon/index.svelte-ca238769.js";
+    js5 = ["pages/soon/index.svelte-ca238769.js", "chunks/vendor-1c43a481.js"];
     css7 = [];
   }
 });
@@ -7191,10 +7191,10 @@ var App = class {
 // .svelte-kit/vercel-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: new Set(["favicon.png", "large-content.png"]),
+  assets: new Set(["ads.txt", "favicon.png", "large-content.png"]),
   _: {
-    mime: { ".png": "image/png" },
-    entry: { "file": "start-63963618.js", "js": ["start-63963618.js", "chunks/vendor-1c43a481.js"], "css": ["assets/start-464e9d0a.css"] },
+    mime: { ".txt": "text/plain", ".png": "image/png" },
+    entry: { "file": "start-d770e008.js", "js": ["start-d770e008.js", "chunks/vendor-1c43a481.js"], "css": ["assets/start-464e9d0a.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
