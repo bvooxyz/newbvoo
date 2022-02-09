@@ -1,5 +1,14 @@
-import adapter from '@sveltejs/adapter-static';
+import nodeAdapter from '@sveltejs/adapter-node';
+import cfAdapter from '@sveltejs/adapter-cloudflare';
 import preprocess from 'svelte-preprocess';
+
+let adapter;
+
+if (process.env.NODE_ENV === 'production') {
+  adapter = cfAdapter();
+} else {
+  adapter = nodeAdapter({ out: 'dist' });
+}
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -15,10 +24,7 @@ const config = {
   ],
 
   kit: {
-    adapter: adapter(),
-
-    // hydrate the <div id="svelte"> element in src/app.html
-    target: '#svelte',
+    adapter,
 
     vite: {
       fs: {
