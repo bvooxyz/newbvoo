@@ -7,7 +7,7 @@
       <div class='w-32' />
       <span class='font-mono text-secondary'><a href='/roms'>ROMs</a></span>
       <div class='flex-grow' />
-      <span class='font-mono text-secondary'><a href="/soon">Tools</a></span>
+      <span class='font-mono text-secondary'><a href="/tools">Tools</a></span>
       <div class='w-32' />
     </div>
   </div>
